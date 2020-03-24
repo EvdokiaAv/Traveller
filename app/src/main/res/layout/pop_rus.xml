@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewpager"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/piter"
+    >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="onMos"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="24sp"
+        android:text="Москва"
+        tools:ignore="OnClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onKaz"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textStyle="bold|italic"
+        android:textSize="24sp"
+        android:text="Казань"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="24sp"
+        android:onClick="onSoc"
+        android:text="Сочи"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-295dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="2dp"
+        android:textSize="24sp"
+        android:onClick="onKal"
+        android:text="Калининград"
+        tools:ignore="OnClick" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="2dp"
+        android:textSize="24sp"
+        android:onClick="onVolgo"
+        android:text="Волгоград"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="10dp"
+        android:textSize="22dp"
+        android:onClick="onSpb"
+        android:text="Санкт-Петербуг"
+        tools:ignore="OnClick" />
+
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="165dp"
+            android:src="@drawable/ekat3"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:text="Екатеринбург"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/about_ekaterin"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:text="Главные достопримечательности"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin1"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Исторический сквер"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin2"
+            android:layout_marginTop="-205dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="230dp"
+            android:textStyle="bold|italic"
+            android:text="Дом Севастьянова"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin3"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Литературный квартал"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin4"
+            android:layout_marginTop="-215dp"
+            android:layout_marginLeft="210dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="240dp"
+            android:textStyle="bold|italic"
+            android:text="Улица Вайнера"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin5"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Усадьба Расторгуевых"
+            android:textSize="20sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ekaterin6"
+            android:layout_marginTop="-190dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="240dp"
+            android:textStyle="bold|italic"
+            android:text="Ганина Яма"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold|italic"
+            android:text="Главные музеи"
+            android:textSize="25sp"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMuseumEkaterin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/EkaterinMuseum" />
+
+        <Button
+            android:id="@+id/buttonFindDescriptionEkaterin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDescriptionEkaterin"
+            android:text="О музее" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionMuseumEkaterin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="130dp"
+            android:textStyle="bold|italic"
+            android:text="Гостиницы"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold|italic"
+            android:text="Самые дорогие гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Ramada by Wyndham Yekaterinburg"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Отель Резиденция"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Отель Хаятт Ридженси Екатеринбург"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие бюджетные гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Отель Веста"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Евротель Центральный"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Гранд Авеню Отель"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие рестораны"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1) Панорама А.С.П.  - Средний счет: 1300 - 1700 руб."
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2) Паштет  - Средний счет: 800 - 1000 руб."
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)  Хмели Сунели  - Средний счет: 1000-1500 руб."
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Екатеринбург ждёт Вас!"
+            android:textSize="25sp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoteMsc"
+            android:textStyle="bold|italic"
+            android:layout_marginRight="0dp"
+            android:textSize="24sp"
+            android:text="Добавить в список пожеланий"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="185dp"
+            android:src="@drawable/volvograd4"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:text="Волгоград"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/about_volgograd"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:text="Главные достопримечательности"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc1"
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:src="@drawable/volg2"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:text="Мамаев Курган"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc2"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:src="@drawable/volg3"
+            android:layout_marginTop="-190dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="240dp"
+            android:textStyle="bold|italic"
+            android:text="Дом Павлова"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc3"
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:src="@drawable/volg4"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Мельница Гергардта"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/volg5"
+            android:layout_marginTop="-195dp"
+            android:layout_marginLeft="210dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="220dp"
+            android:textStyle="bold|italic"
+            android:text="Аллея Героев"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/volg6"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:text="Центральная набережная"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="-200dp"
+            android:src="@drawable/volg7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="220dp"
+            android:textStyle="bold|italic"
+            android:text="Площадь Павших борцов"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold|italic"
+            android:text="Главные музеи"
+            android:textSize="25sp"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMuseumVolgograd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/VolgogradMuseum" />
+
+        <Button
+            android:id="@+id/buttonFindDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDescriptionKal"
+            android:text="О музее" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionMuseumVolgograd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="130dp"
+            android:textStyle="bold|italic"
+            android:text="Гостиницы"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold|italic"
+            android:text="Самые дорогие гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Царицынская слобода"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Отель Волгоград"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Отель Галлерея Парк Волгоград"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие бюджетные гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Отель Наири"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)ПаркИнн Рэдиссон"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Отель Ринг"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие рестораны"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)  Сосновый бор   - Средний счет: 1300-1500 руб."
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2) Onegin  - Средний счет: 1800-2000 руб."
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3) Счастье есть! - Средний счет: 800-1000 руб."
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Волгоград ждёт Вас!"
+            android:textSize="25sp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoteMsc"
+            android:textStyle="bold|italic"
+            android:layout_marginRight="0dp"
+            android:textSize="24sp"
+            android:text="Добавить в список пожеланий"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="-30dp"
+            android:layout_width="420dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="160dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:text="Казань"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/about_kazan"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:text="Главные достопримечательности"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/kaz2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan2"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Казанский Кремль"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/kaz3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan3"
+            android:layout_marginTop="-195dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="220dp"
+            android:textStyle="bold|italic"
+            android:text="Мечеть Кул-Шариф"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/kaz4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan4"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold|italic"
+            android:text="Улица Баумана"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/kaz5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan5"
+            android:layout_marginTop="-195dp"
+            android:layout_marginLeft="210dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="220dp"
+            android:textStyle="bold|italic"
+            android:text="Центр семьи Казан"
+            android:textSize="20sp"
+
+            />
+        <ImageView
+            android:id="@+id/kaz6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan6"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold|italic"
+            android:text="Экият"
+            android:textSize="20sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/kaz7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kazan7"
+            android:layout_marginTop="-215dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="200dp"
+            android:textStyle="bold|italic"
+            android:text="Кремлевская набережная"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold|italic"
+            android:text="Главные музеи"
+            android:textSize="25sp"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMuseumKaz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/KazMuseum" />
+
+        <Button
+            android:id="@+id/buttonFindDescriptionKaz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDescriptionKaz"
+            android:text="О музее" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionMuseumKaz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="130dp"
+            android:textStyle="bold|italic"
+            android:text="Гостиницы"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold|italic"
+            android:text="Самые дорогие гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Шаляпин Palace Hotel"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Courtyard by Marriott Kazan Kremlin"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Ривьера"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие бюджетные гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Новинка"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Гостиница Волга"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Отель Татар Инн"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие рестораны"
+            android:textSize="25sp"
+
+            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginLeft="0dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/rest_moscow"-->
+<!--            android:textSize="20sp"-->
+
+<!--            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1) Дом татарской кулинарии  - Средний счет: 1500-2000 руб."
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2) Virid Yard  - Средний счет: 1200-1500 руб."
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3) Ресторан “На крыше”  - Средний счет: 1500-1700 руб."
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Казань ждёт Вас!"
+            android:textSize="25sp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoteMsc"
+            android:textStyle="bold|italic"
+            android:layout_marginRight="0dp"
+            android:textSize="24sp"
+            android:text="Добавить в список пожеланий"
+            />
+    </LinearLayout>
+</ScrollView>

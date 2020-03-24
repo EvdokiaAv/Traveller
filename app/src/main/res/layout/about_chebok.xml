@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="165dp"
+            android:src="@drawable/cheb1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="120dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:text="Чебоксары"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/about_chebok"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:text="Главные достопримечательности"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chebok1"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Монумент Матери"
+            android:textSize="25sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chebok2"
+            android:layout_marginTop="-195dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="240dp"
+            android:textStyle="bold|italic"
+            android:text="Чебоксарский залив"
+            android:textSize="25sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chebok3"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold|italic"
+            android:text="Парк 'Победа'"
+            android:textSize="25sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc4"
+            android:layout_width="250dp"
+            android:layout_height="260dp"
+            android:src="@drawable/chebok4"
+            android:layout_marginTop="-230dp"
+            android:layout_marginLeft="210dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="210dp"
+            android:textStyle="bold|italic"
+            android:text="Памятник Чапаеву"
+            android:textSize="25sp"
+
+            />
+        <ImageView
+            android:id="@+id/msc5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chebok5"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-0dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold|italic"
+            android:text="Драматический театр"
+            android:textSize="20sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/msc6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chebok6"
+            android:layout_marginTop="-190dp"
+            android:layout_marginLeft="210dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="220dp"
+            android:textStyle="bold|italic"
+            android:text="Бульвар Купца Ефремова"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold|italic"
+            android:text="Главные музеи"
+            android:textSize="25sp"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMuseumChebok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ChebokMuseum" />
+
+        <Button
+            android:id="@+id/buttonFindDescriptionChebok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDescriptionChebok"
+            android:text="О музее" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionMuseumChebok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="130dp"
+            android:textStyle="bold|italic"
+            android:text="Гостиницы"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold|italic"
+            android:text="Самые дорогие гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Волга Премиум Отель"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Garder Hotel and Spa"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Manor House"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие бюджетные гостиницы"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)Hotel People"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2)Атал"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)Гостиница Чувашия"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Лучшие рестораны"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="1)  Ресторан “Волга”  - Средний счет: 700 - 900 руб."
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="2) Хочу пельмени  - Средний счет: 400 - 500 руб."
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="3)  Ресторан “Дом культуры”  - Средний счет: 1000-1200 руб."
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold|italic"
+            android:text="Чебоксары ждут Вас!"
+            android:textSize="25sp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoteMsc"
+            android:textStyle="bold|italic"
+            android:layout_marginRight="0dp"
+            android:textSize="24sp"
+            android:text="Добавить в список пожеланий"
+            />
+    </LinearLayout>
+</ScrollView>

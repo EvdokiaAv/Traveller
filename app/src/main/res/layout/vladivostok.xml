@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewpager"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="120dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="#FF1919"
+        android:text="Владивосток"
+        />
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="165dp"
+        android:src="@drawable/vlad1"
+        />
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="165dp"
+        android:src="@drawable/vlad2"
+        />
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="205dp"
+        android:src="@drawable/vlad3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="130dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:text="Интересно?"
+        android:textColor="#FF1919"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="onVlad"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="150dp"
+        android:textSize="24sp"
+        android:text="Да!"
+        android:textColor="#FF1919"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:onClick="onNoV"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="80dp"
+        android:textSize="24sp"
+        android:text="Нет"
+        tools:ignore="OnClick"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

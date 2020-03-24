@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.traveller">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".AboutRussia">
+
+        </activity>
+        <activity android:name=".NeizRus">
+
+        </activity>
+
+        <activity android:name=".PopRus">
+
+        </activity>
+
+        <activity android:name=".Moscow">
+
+        </activity>
+        <activity android:name=".Kazan">
+
+        </activity>
+        <activity android:name=".Sochi">
+
+        </activity>
+
+        <activity android:name=".Kaliningrad">
+
+        </activity>
+
+        <activity android:name=".Spb">
+
+        </activity>
+
+        <activity android:name=".Volgograd">
+
+        </activity>
+
+        <activity android:name=".Chebok">
+
+        </activity>
+
+        <activity android:name=".Voronez">
+
+        </activity>
+
+        <activity android:name=".Ekaterin">
+
+        </activity>
+
+        <activity android:name=".Izevsk">
+
+        </activity>
+
+        <activity android:name=".Kursk">
+
+        </activity>
+
+        <activity android:name=".Vladivostok">
+
+        </activity>
+
+
+        <activity android:name=".AboutMoscow">
+
+        </activity>
+        <activity android:name=".AboutKazan">
+
+        </activity>
+        <activity android:name=".AboutSochi">
+
+        </activity>
+
+        <activity android:name=".AboutKalin">
+
+        </activity>
+
+        <activity android:name=".AboutVolgograd">
+
+        </activity>
+        <activity android:name=".AboutChebok">
+
+        </activity>
+        <activity android:name=".AboutEkaterin">
+
+        </activity>
+
+        <activity android:name=".AboutVoronez">
+
+        </activity>
+        <activity android:name=".AboutIzevsk">
+
+        </activity>
+        <activity android:name=".AboutKursk">
+
+        </activity>
+        <activity android:name=".AboutVlad">
+
+        </activity>
+        <activity android:name=".NotesContract">
+
+    </activity>
+
+        <activity android:name=".NotesDBHelper">
+
+        </activity>
+
+        <activity android:name=".AddNoteActivity">
+
+        </activity>
+        <activity android:name=".Note">
+
+        </activity>
+        <activity android:name=".NoteAbout">
+
+    </activity>
+
+        <activity android:name=".NotesAdapter">
+
+        </activity>
+
+    </application>
+
+
+
+
+</manifest>
